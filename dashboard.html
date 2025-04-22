@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taquería - Dashboard</title>
+    <link rel="stylesheet" href="estilos/estilos_dashboard.css">
+</head>
+<body>
+
+    <!-- Header con el menú -->
+    <header>
+        <h1>Taquería - Sistema de Gestión</h1>
+        <nav>
+            <ul>
+                <li><a href="#" >Dashboard</a></li>
+                <li><a href="#" >Órdenes</a></li>
+                <li><a href="#" >Ventas</a></li>
+                <li><a href="productos.php" >Productos</a></li>
+                <li><a href="usuarios.php" >Usuarios</a></li>
+                <li><button onclick="cerrarSesion()" class="logout-btn">Cerrar Sesión</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenedor donde se cargará el contenido dinámico -->
+    <main id="contenido">
+        <section class="stats">
+            <div class="card">
+                <h2>Total Ventas del Día</h2>
+                <p id="totalVentas">$0.00</p>
+            </div>
+            <div class="card">
+                <h2>Cantidad de Órdenes</h2>
+                <p id="totalOrdenes">0</p>
+            </div>
+        </section>
+
+        <section class="mesas">
+            <h2>Estado de las Mesas</h2>
+            <div id="listaMesas"></div>
+        </section>
+    </main>
+
+    <script>
+        function cerrarSesion() {
+                window.location.href = "index.html";
+        }
+    </script>
+
+</body>
+</html>

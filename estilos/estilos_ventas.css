@@ -1,0 +1,233 @@
+/* General */
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    background-color: #fff;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    width: 190px;
+    height: 100vh;
+    background: #A90125;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+nav {
+    height: 100%;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+    height: 100%; /* Asegura que use todo el espacio disponible */
+    justify-content: space-evenly; /* Espaciado uniforme entre elementos */
+}
+
+.avatar{
+    flex-direction: column;
+}
+.avatar img{
+    position: relative;
+    top: -20px;
+    width: 80x;
+    height: 80px;
+}
+
+.avatar label{
+    position: relative;
+    top: -20px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.menu li {
+    display: flex;
+    text-align: left;
+    margin-left: 20px;
+    width: 140px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu nav ul li img{
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+    width: 25x;
+    height: 25px;
+}
+
+.menu li:hover{
+    background-color: #ffae00;
+    position: relative;
+    transform: scale(1.05);
+}
+
+.menu li a:hover{
+    color: #000;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.user{
+    background-color: #ffae00;
+    border-radius: 5px;
+    width: 110px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 10px;
+    position: relative;
+
+}
+
+.user a{
+    color: #000;
+}
+
+.menu button {
+    width: 150px;
+    padding: 12px;
+    margin-top: 50px;
+    border: none;
+    background-color: #ffae00;
+    color: #A90125;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    
+}
+
+.menu button:hover {
+    background-color: #fff;
+    transform: scale(1.03);
+}
+
+
+/* Contenedor principal */
+.contenedor {
+    margin-left: 190px;
+    padding: 20px;
+    width: calc(100% - 230px);
+}
+
+h2{
+    font-size: 35px;
+}
+
+/* Formulario */
+form{
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+input{
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: #EFEEE9;
+    border: 2px solid #000;
+}
+
+select{
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: #EFEEE9;
+    border: 2px solid #000;
+}
+
+button{
+    margin-left: 10px;
+    background: #ffae00;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+button:hover{
+    background: #A90125;
+    color:#000;
+    transform: scale(1.03);
+}
+
+/* Tabla */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table td{
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 500;
+    text-align: left;
+}
+
+table th {
+    background-color: #A90125;
+    color: white;
+}
+
+.paginacion {
+    display: flex;
+    justify-content: flex-end; /* Alinea los hijos (los <a>) a la derecha */
+}
+
+
+.paginacion a{
+    position: relative;
+    top: 5px;
+    text-decoration: none;
+    background: #ffae00;
+    color: white;
+    font-size: 12px;
+    padding: 8px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.paginacion a:hover{
+    color: #000;
+}
+
+
+

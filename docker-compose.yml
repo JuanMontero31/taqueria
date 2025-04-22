@@ -1,0 +1,35 @@
+networks:
+  bd:
+  web:
+
+services:
+  mysql_db:
+    image: mysql:latest
+    container_name: mysql_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_DATABASE: taqueria
+    networks:
+      - bd
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  page:
+    build: .
+    container_name: page
+    restart: always
+    ports:
+      - "8080:80"
+    networks:
+      - web
+      - bd
+    depends_on:
+      - mysql_db
+    volumes:
+      - .:/var/www/html
+
+volumes:
+  mysql_data:
